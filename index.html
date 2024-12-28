@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Simulation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: black;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; 
+      margin-bottom: 20px;
+    }
+
+    .search-bar {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #272A30;
+    }
+
+    .header-buttons button {
+      margin: 0;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      width: 150px;
+    }
+
+    .promo-image {
+      display: block;
+      margin: 20px auto;
+      width: 300px;
+    }
+
+    #menu {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    #menu li {
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      background-color: black;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+      
+    }
+
+    #menu li img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="left">
+     <img src="https://s3-alpha-sig.figma.com/img/6c30/5666/5f8945b573189c004e90e2728a92eb63?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mR~BZogC-BEmdI9A6J6uvRjoUkPQuc7fBUaXljkM-xJTZ2ew9f-xrWaqgHnMiX5bxtDxBgjUwdZqQFPASWCVZ-ubj6H0XXwQHhBZeW2d9poDanp5u5Upbnt-G11GXsbbcXmlMAWC71YJ4PK3DbJ94syiqz~3tQqVxtnWYIAn~BVIeToSujIPwJlPaIiwh0S9knyq0NEYOmhSeXpweAsoF1iUTWpDmexSET9fOkrQ602~EM5gHCcpM8PzHxvickrXtdRyG-uExKV3kGJ-Y24l1sFipUxHiz3ilbciRfyWUJBXXzT0TJ3VuFnNPXGTxj0Zn4i~JTZUiCc~efSd0P6rPQ__" alt="Restaurant Logo" class="logo">
+
+    <h1>Your Restaurant Menu</h1>
+    <h3>Your Slogan</h3>
+    
+    <h2>Quick Links</h2>
+    <ol>1. Home</ol>
+    <ol>2. Your Orders</ol>
+    <ol>3. wallet</ol>
+    <ol>4. Profile</ol>
+    <ol>5. Logout</ol>
+    
+    <h2>More About Us</h2>
+    <ol>1. Our blog</ol>
+    <ol>2. Upcoming Dishes</ol>
+    <ol>3. Our Story</ol>
+    <ol>4. Socialo Media Links</ol>
+  </div>
+
+  <div class="header-container">
+    <input type="text" id="search" class="search-bar" placeholder="Search Food Item" oninput="filterMenu()">
+    <button onclick="openLogin()">Login</button>
+    <button onclick="openSignup()">Signup</button>
+  </div>
+
+  <img src="https://s3-alpha-sig.figma.com/img/bfaa/d74b/76ba1256d10f8af33fd5e08b7574087c?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MyFQ~9TnXeAxSdr451LURD2KVIfr-kR9wtn401ZZi2LHpl3s0wSEhKvV8xRHMkdXMX6Os3q7H6TQj7i6jddTRUmt7A7Sj4FD9974xSmh69KYGjVVKbjiaxQkGmeuQlT3oNLQ1Si~M2xcoKyG4In50DOtYS2YEQLKiWrM~xUEumGBF9f2BkgkXav67MlRUTnS7p3iIq~74LqVsALle8-~~Tzh-rwOSOJp5gC8uguNqYVIgJbc~WLf1LGAvS78kNCCP4kUrHY37NLS9B-kgfG9V10P7PreDp0Df-kSqbNAzT3jNWrbzX78p~doX041BN34AxlAQWJk38EsHJXkl2wfkg__" alt="Promo Image" class="promo-image">
+
+  <h3>Menu</h3>
+  <ul id="menu">
+  </ul>
+
+  <script src="script.js"></script> 
+</body>
+</html>
